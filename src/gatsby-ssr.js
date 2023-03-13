@@ -51,7 +51,7 @@ function buildTrackingCode(pluginOptions) {
       ${additionalTrackers
         .map(
           (t) =>
-            `window._paq.push(['addTracker', ${t.trackerUrl}, ${t.siteId}]);`
+            `window._paq.push(['addTracker', '${t.trackerUrl}', '${t.siteId}']);`
         )
         .join('\n')}
 
